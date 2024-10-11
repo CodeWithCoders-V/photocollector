@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="glass-effect-container">
+            <h1>Upload Your Photo</h1>
+            <form id="uploadForm">
+                <input type="file" id="photoInput" accept="image/*">
+                
+                <button type="submit" class="upload-btn">Upload Photo</button>
+            </form>
+            <p id="message"></p>
+            <button id="viewPhotosBtn" class="view-btn">View Collected Photos</button>
+        </div>
+    </div>
+
+    <div id="photoGallery" class="gallery"></div>
+
+    <!-- Modal for success message with animated checkmark -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="checkmark-wrapper">
+                <div class="checkmark"></div>
+            </div>
+            <p>Photo uploaded successfully!</p>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

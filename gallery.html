@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Your Uploaded Photos</h1>
+        <div id="photoGallery" class="gallery"></div>
+        <button id="backBtn" class="back-btn">Back to Home</button>
+    </div>
+
+    <!-- Modal for displaying large image -->
+    <div id="largePhotoModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="largePhoto">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
